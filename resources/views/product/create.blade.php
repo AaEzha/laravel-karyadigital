@@ -15,10 +15,7 @@
                     @endif
 
                     <form action="/products" method="POST">
-                        @csrf
-
                         @include('product.form')
-
                         <button type="submit" class="btn btn-primary">Add Product</button>
                         <a href="/products" class="btn btn-dark">Back</a>
                         

@@ -15,11 +15,8 @@
                     @endif
 
                     <form action="/products/{{ $product->id }}" method="POST">
-                        @csrf
                         @method('PATCH')
-
                         @include('product.form')
-
                         <button type="submit" class="btn btn-primary">Update Product</button>
                         <a href="/products" class="btn btn-dark">Back</a>
                         
